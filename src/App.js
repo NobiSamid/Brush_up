@@ -3,11 +3,11 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/home/HomePage.component';
 
-const TopicsList = (props) =>{
+const Hats = (props) =>{
   console.log(props);
   return(
     <div>
-      <h1>Topic list page</h1>
+      <h1>Hats page</h1>
     </div>
   );
 };
@@ -17,7 +17,7 @@ function App() {
     <div>
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route exact path='/topics' component={TopicsList} />
+        <Route exact path='/hats' component={Hats} />
         {/* <Route exact path='/topics/:topicId' component={TopicDetail} /> */}
       </Switch>
     </div>

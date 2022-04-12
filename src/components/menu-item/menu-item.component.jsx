@@ -12,10 +12,12 @@ const Item = styled(Paper)(({ theme }) => ({
   boxShadow: "0 8px 8px 2px rgba(15, 255, 80, .5)",
 }));
 
-const MenuItem = ({ title, imageUrl, history }) => {
+const MenuItem = ({ title, imageUrl, history, linkUrl, match }) => {
   return (
         <Grid item xs={4} md={4}>
-          <Item onClick={() => history.push()} style={{backgroundImage: `url(${imageUrl})`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
+          <Item 
+            onClick={() => history.push(`${match.url}${linkUrl}`)} 
+            style={{backgroundImage: `url(${imageUrl})`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
             <h3>{title}</h3>
             <span>Shop now</span>
           </Item>

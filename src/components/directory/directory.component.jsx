@@ -45,8 +45,8 @@ class Directory extends Component {
   render() {
     return (
       <Grid container spacing={3}>
-        {this.state.sections.map(({ title, imageUrl, id, linkUrl }) => (
-          <MenuItem key={id} title={title} imageUrl={imageUrl} linkUrl={linkUrl} />
+        {this.state.sections.map(({ id, ...otherSectionProps }) => (
+          <MenuItem key={id} {...otherSectionProps} />
         ))}
       </Grid>
     );

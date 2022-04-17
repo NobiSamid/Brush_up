@@ -1,4 +1,3 @@
-import { Grid } from "@mui/material";
 import React, { Component } from "react";
 import PreviewCollection from "../../components/preview-collection/preview-collection.component";
 import Shop_data from "./shop.data";

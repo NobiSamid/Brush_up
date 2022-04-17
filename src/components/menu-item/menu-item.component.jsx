@@ -26,4 +26,4 @@ const MenuItem = ({ title, imageUrl, history, linkUrl, match }) => {
 };
 
 export default withRouter(MenuItem);
-// by wrapping MenuItem with withRouter it will return super power MenuItem component with acces to location match and history 
+// by wrapping MenuItem with withRouter it will return super power MenuItem component with access to location match and history 
